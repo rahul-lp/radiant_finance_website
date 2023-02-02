@@ -1,64 +1,15 @@
-/* Horizontal Accordion */
-.hoz_container {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-.choice {
-    height: 50vh;
-    /* box-sizing: border-box;
-    padding: 0;
-    overflow: hidden;
-    float: left; */
-    transition: width 0.4s;
-    transition-timing-function: ease-in;
-    border-radius: 3px;
-}
-
+/* Accordian Styling */
 .accordian_text {
     height: 10vh;
 }
 
-.expand {
-    width: 100%;
+.accordion-collapse {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
 }
-
-.unset {
-    width: 50%;
-    /* color: black !important;
-    background-color: #ddd !important; */
-}
-
-.hoz_small {
-    width: 15%;
-    background-color: #f5f5f5 !important;
-}
-
-.hoz_small>div {
-    opacity: 0;
-}
-
-.unset>div>p {
-    opacity: 0;
-}
-
-.expand>div {
-    transition-delay: 500ms;
-    opacity: 1;
-}
-
 
 /* Image Color on Hover */
-.profile_hover_div {
-    z-index: 1;
-}
-
-.profile_hover_div:hover {
-    z-index: 2;
-}
-
 .profile_hover_div img {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
@@ -80,24 +31,39 @@
     -moz-transform: scale(1.1);
 }
 
-/*       Scrool Bar      */
+/* Testimonials */
+.testimonial_selected_cards {
+    background-color: #E74040;
+    color: #f1f1f1;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
 
+.testimonial_unselected_card :hover {
+    background-color: #f1f1f1;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+}
+
+/*       Scrool Bar      */
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

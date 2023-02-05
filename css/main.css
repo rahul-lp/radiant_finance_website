@@ -10,7 +10,7 @@
 }
 
 /* Image Color on Hover */
-.profile_hover_div img {
+.profile_hover_div img, div {
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
@@ -22,13 +22,19 @@
     -moz-filter: grayscale(100%);
 }
 
-.profile_hover_div img:hover {
+.profile_hover_div :hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
+}
+
+.name_hover_div {
+    width: 100%;
+    top: 80%;
+    background-color: rgba(232, 232, 232, 0.75);
 }
 
 /* Testimonials */
@@ -45,6 +51,16 @@
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
+}
+
+
+/* Animating Navigation Bar */
+/* @media (prefers-reduced-motion: reduce) {
+    
+} */
+.collapsing {
+    transition-property: height, visibility;
+    transition-duration: .2s;
 }
 
 /*       Scrool Bar      */

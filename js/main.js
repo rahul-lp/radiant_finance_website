@@ -48,21 +48,23 @@ $(document).ready(function () {
 
     // auto switching cards
     showSlides();
+
+    addSmoothScrolling();
 });
 
 
-function showSlides(){
-    if(cardClicked){return;}
+function showSlides() {
+    if (cardClicked) { return; }
     // console.log("Show Testimonials for " + current_Card);
-    switch(current_Card){
-        case 1 : changeSelected(2);
-        current_Card = 2; break;
-        case 2 : changeSelected(3);
-        current_Card = 3; break;
-        case 3 : changeSelected(4);
-        current_Card = 4; break;
-        case 4 : changeSelected(1);
-        current_Card = 1; break;
+    switch (current_Card) {
+        case 1: changeSelected(2);
+            current_Card = 2; break;
+        case 2: changeSelected(3);
+            current_Card = 3; break;
+        case 3: changeSelected(4);
+            current_Card = 4; break;
+        case 4: changeSelected(1);
+            current_Card = 1; break;
     }
     // console.log(cardClicked);
     setTimeout(showSlides, 3000);
@@ -103,4 +105,17 @@ function changeSelected(new_selected) {
     card.classList.remove("testimonial_unselected_card")
     card.classList.add('ms-5')
     card.classList.add('testimonial_selected_cards')
+}
+
+function addSmoothScrolling() {
+    // Add smooth scrolling to all links
+    $("a").on('click', function (event) {
+
+        // offset based on screen size
+        var offset = (($(window).width() < 992) ? 250 : 50);
+
+        $('html, body').animate({
+            scrollTop: $(this.hash).offset().top - offset
+        }, 800);
+    });
 }

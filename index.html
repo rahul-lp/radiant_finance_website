@@ -22,37 +22,42 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-2 px-xl-5 sticky-top">
-        <div class="container-fluid mx-xl-5">
+        <div class="container-fluid mx-xl-5 order-1">
             <a class="navbar-brand" href="#">
                 <span class="d-none d-sm-inline">Radiant Finance</span>
                 <span class="d-inline d-sm-none">RF</span>
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse order-lg-2 order-3" id="navbarNav">
                 <ul class="navbar-nav justify-content-center flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <li class="nav-item text-center">
+                        <a class="nav-link active" aria-current="page" href="#hero" data-bs-toggle="collapse"
+                            data-bs-target=".navbar-collapse.show">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#services" data-bs-toggle="collapse"
+                            data-bs-target=".navbar-collapse.show">Services</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#about" data-bs-toggle="collapse"
+                            data-bs-target=".navbar-collapse.show">About</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Why Us</a>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#why_us" data-bs-toggle="collapse"
+                            data-bs-target=".navbar-collapse.show">Why Us</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#testimonial">Testimonials</a>
                     </li>
                 </ul>
             </div>
 
-            <div class="justify-content-end">
+            <div class="justify-content-end order-lg-3 order-2">
                 <div class="btn p-2">
                     <img src="ref/header_call_icon.png" alt="">
                     <span class="d-none d-sm-inline">+91-9876543521</span>
                 </div>
-                <div class="btn rounded-pill px-3 py-2 " style="color: whitesmoke; background-color: #E74040;">
+                <div class="btn rounded-pill px-3 py-2" data-bs-toggle="modal" data-bs-target="#faq_modal"
+                    style="color: whitesmoke; background-color: #E74040;">
                     <span class="d-none d-sm-inline">Have a query</span>
                     <img src="ref/arrow_right_white.png" alt="">
                 </div>
@@ -64,8 +69,182 @@
         </div>
     </nav>
 
+    <!-- Modal FAQs -->
+    <div class="modal fade" id="faq_modal" tabindex="-1" aria-labelledby="faq_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content" style="height: 80vh;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="faq_modalLabel">Have a query</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container h-100">
+                        <div class="row row-cols-1 text-center mt-5">
+                            <div class="h2 fw-bold">FAQs</div>
+                        </div>
+                        <div class="row row-cols-1 text-center">
+                            <div class="p2">Quickly find answers to your questions.<br> Can't find your question? Send
+                                us your query and we will get back to you soon.</div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-between" style="height: 56vh;">
+                            <div class="row row-cols-1 mt-5">
+                                <div class="accordion" id="finance_accordion">
+                                    <div class="accordion-item border-dark">
+                                        <h2 class="accordion-header" id="faq-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseOne"
+                                                aria-expanded="false" aria-controls="faq-collapseOne">
+                                                New Car Loan
+                                            </button>
+                                        </h2>
+                                        <div id="faq-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="faq-headingOne" data-bs-parent="#finance_accordion">
+                                            <div class="accordion-body">
+                                                <span class="d-block overflow-auto accordian_text">
+                                                    Family health insurance plans are health plans that cover the
+                                                    entire
+                                                    family.
+                                                    As opposed to individual plans, the family plan provides cover
+                                                    to every
+                                                    member of your family on a single premium. This implies that you
+                                                    do not
+                                                    have
+                                                    to pay separate premiums for each individual, regardless of
+                                                    their age.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-dark">
+                                        <h2 class="accordion-header" id="faq-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo"
+                                                aria-expanded="false" aria-controls="faq-collapseTwo">
+                                                New Car Loan
+                                            </button>
+                                        </h2>
+                                        <div id="faq-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="faq-headingTwo" data-bs-parent="#finance_accordion">
+                                            <div class="accordion-body">
+                                                <span class="d-block overflow-auto accordian_text">
+                                                    Family health insurance plans are health plans that cover the
+                                                    entire
+                                                    family.
+                                                    As opposed to individual plans, the family plan provides cover
+                                                    to every
+                                                    member of your family on a single premium. This implies that you
+                                                    do not
+                                                    have
+                                                    to pay separate premiums for each individual, regardless of
+                                                    their age.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-dark">
+                                        <h2 class="accordion-header" id="faq-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseThree"
+                                                aria-expanded="false" aria-controls="faq-collapseThree">
+                                                New Car Loan
+                                            </button>
+                                        </h2>
+                                        <div id="faq-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="faq-headingThree" data-bs-parent="#finance_accordion">
+                                            <div class="accordion-body">
+                                                <span class="d-block overflow-auto accordian_text">
+                                                    Family health insurance plans are health plans that cover the
+                                                    entire
+                                                    family.
+                                                    As opposed to individual plans, the family plan provides cover
+                                                    to every
+                                                    member of your family on a single premium. This implies that you
+                                                    do not
+                                                    have
+                                                    to pay separate premiums for each individual, regardless of
+                                                    their age.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-dark">
+                                        <h2 class="accordion-header" id="faq-headingFour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseFour"
+                                                aria-expanded="false" aria-controls="faq-collapseFour">
+                                                New Car Loan
+                                            </button>
+                                        </h2>
+                                        <div id="faq-collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="faq-headingFour" data-bs-parent="#finance_accordion">
+                                            <div class="accordion-body">
+                                                <span class="d-block overflow-auto accordian_text">
+                                                    Family health insurance plans are health plans that cover the
+                                                    entire
+                                                    family.
+                                                    As opposed to individual plans, the family plan provides cover
+                                                    to every
+                                                    member of your family on a single premium. This implies that you
+                                                    do not
+                                                    have
+                                                    to pay separate premiums for each individual, regardless of
+                                                    their age.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-dark">
+                                        <h2 class="accordion-header" id="faq-headingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#faq-collapseFive"
+                                                aria-expanded="false" aria-controls="faq-collapseFive">
+                                                New Car Loan
+                                            </button>
+                                        </h2>
+                                        <div id="faq-collapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="faq-headingFive" data-bs-parent="#finance_accordion">
+                                            <div class="accordion-body">
+                                                <span class="d-block overflow-auto accordian_text">
+                                                    Family health insurance plans are health plans that cover the
+                                                    entire
+                                                    family.
+                                                    As opposed to individual plans, the family plan provides cover
+                                                    to every
+                                                    member of your family on a single premium. This implies that you
+                                                    do not
+                                                    have
+                                                    to pay separate premiums for each individual, regardless of
+                                                    their age.
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-11">
+                                    <input type="text" class="form-control" id="faq_query_input"
+                                        placeholder="Your Query" required>
+                                </div>
+                                <div class="col-1 text-center ps-0">
+                                    <div class="btn"  style="color: whitesmoke; background-color: #E74040;">
+                                        <span class="d-none d-sm-inline">Submit</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div> -->
+            </div>
+        </div>
+    </div>
+
     <!-- Hero Section -->
-    <main class="d-flex align-items-center">
+    <main class="d-flex align-items-center" id="hero">
         <div class="container align-items-center" style="height: 75vh;">
             <div class="row h-100">
                 <div class="col-xl-1"></div>
@@ -85,7 +264,7 @@
     </main>
 
     <!-- Our Services -->
-    <div class="d-flex" style="background-color: #e8e8e8;">
+    <div class="d-flex" style="background-color: #e8e8e8;" id="services">
         <div class="container py-5">
             <!-- Section Heading -->
             <div class="container">
@@ -354,7 +533,7 @@
     </div>
 
     <!-- About Us -->
-    <div class="d-flex" style="background-color: #e8e8e8;">
+    <div class="d-flex" style="background-color: #e8e8e8;" id="about">
         <div class="container py-5">
             <!-- Section Heading -->
             <div class="container">
@@ -376,15 +555,25 @@
             </div>
             <div class="container justify-content-center">
                 <div class="row mt-5">
-                    <div
-                        class="profile_hover_div col-md-4 col-12 text-md-start text-center mt-md-0 mt-3 order-2 order-md-1">
-                        <img class="img-fluid" src="ref/profile_anuj_color.png" alt="">
+                    <div class="col-md-4 col-12 text-md-start text-center mt-md-0 mt-3 order-2 order-md-1">
+                        <div class="profile_hover_div position-relative">
+                            <img class="img-fluid rounded" src="ref/profile_anuj_color.png" alt="">
+                            <div class="position-absolute name_hover_div">
+                                <div class="p1">Anuj Chandak</div>
+                            </div>
+                        </div>
                     </div>
                     <div class="profile_hover_div col-md-4 col-12 text-center order-1 order-md-2">
-                        <img class="img-fluid" src="ref/profile_uncle_color.png" alt="">
+                        <img class="img-fluid rounded" src="ref/profile_uncle_color.png" alt="">
+                        <div class="bottom-50">
+                            Anuj Chandak
+                        </div>
                     </div>
                     <div class="profile_hover_div col-md-4 col-12 text-md-end text-center mt-md-0 mt-3 order-3">
-                        <img class="img-fluid" src="ref/profile_yash_color.png" alt="">
+                        <img class="img-fluid rounded" src="ref/profile_yash_color.png" alt="">
+                        <div class="bottom-50">
+                            Anuj Chandak
+                        </div>
                     </div>
                 </div>
             </div>
@@ -392,7 +581,7 @@
     </div>
 
     <!-- Why Us -->
-    <div class="d-flex" style="background-color: #e8e8e8;">
+    <div class="d-flex" style="background-color: #e8e8e8;" id="why_us">
         <div class="container py-5">
             <!-- Section Heading -->
             <div class="container">
@@ -442,7 +631,7 @@
     </div>
 
     <!-- Testimonials -->
-    <div class="d-flex" style="background-color: #e8e8e8;">
+    <div class="d-flex" style="background-color: #e8e8e8;" id="testimonial">
         <div class="container py-5">
             <!-- Section Heading -->
             <div class="container">
@@ -458,7 +647,7 @@
                     <div class="row text-center px-2">
                         <div class="col-lg-6 col-12 d-none d-lg-flex">
                             <div class="d-flex flex-column">
-                                <div class="testimonial_card card ms-5 my-3"  id="testimonial_1">
+                                <div class="testimonial_card card ms-5 my-3" id="testimonial_1">
                                     <div class="d-flex card-body">
                                         <img class="img-fluid" src="ref/temp_client_profile.png" alt="">
                                         <div class="container text-start">
@@ -500,7 +689,8 @@
                             <div class="container text-start">
                                 <img src="ref/quotes_open.png" alt="">
                             </div>
-                            <div class="h4 p-4 pe-5" style="text-align: justify;" id="testimonial_text">
+                            <div class="h5 p-4 pe-5" style="text-align: justify; letter-spacing: 0.2px;"
+                                id="testimonial_text">
                                 We’ve been with Radiant Finance for past many years. They are
                                 professional, friendly and care about their customers. They actively look for the
                                 best rates and coverage annually. Their continual advice on financial planning
@@ -597,8 +787,8 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="footer_form_name" class="form-label">Name *</label>
-                                    <input type="text" class="form-control" id="footer_form_name" placeholder="Full Name"
-                                        required>
+                                    <input type="text" class="form-control" id="footer_form_name"
+                                        placeholder="Full Name" required>
                                 </div>
                                 <div class="mb-3">
                                     <label for="footer_form_email" class="form-label">Email address *</label>
@@ -607,8 +797,8 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="footer_form_message">Leave a message *</label>
-                                    <textarea type="text" class="form-control" id="footer_form_message" placeholder="Message"
-                                        required></textarea>
+                                    <textarea type="text" class="form-control" id="footer_form_message"
+                                        placeholder="Message" required></textarea>
                                 </div>
                                 <div class="d-grid gap-2">
                                     <button type="submit" class="btn"

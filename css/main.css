@@ -1,3 +1,8 @@
+/* Font Family */
+body {
+    font-family: 'Montserrat';
+}
+
 /* Accordian Styling */
 .accordian_text {
     height: 10vh;
@@ -38,32 +43,47 @@
 }
 
 /* Testimonials */
+
 .testimonial_selected_cards {
     background-color: #E74040;
-    color: #f1f1f1;
     transition: all 0.2s;
-    -webkit-transition: all 0.2s;
+    -webkit-transition: all 0.2s !important;
     -moz-transition: all 0.2s;
 }
 
-.testimonial_unselected_card :hover {
+.testimonial_selected_cards .h5 {
+    color: white;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s !important;
+    -moz-transition: all 0.2s;
+}
+
+.testimonial_selected_cards .p {
+    color: white;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s !important;
+    -moz-transition: all 0.2s;
+}
+
+.testimonial_unselected_card {
+    color: black;
+    background-color: white;
+}
+
+/* .testimonial_unselected_card :hover {
     background-color: #f1f1f1;
     transition: all 0.2s;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
-}
-
+} */
 
 /* Animating Navigation Bar */
-/* @media (prefers-reduced-motion: reduce) {
-    
-} */
 .collapsing {
     transition-property: height, visibility;
     transition-duration: .2s;
 }
 
-/*       Scrool Bar      */
+/*       Scrool Bar Styling      */
 /* width */
 ::-webkit-scrollbar {
     width: 5px;

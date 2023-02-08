@@ -1,0 +1,17 @@
+.body {
+    font-family: 'Montserrat';
+}
+
+.selected_tab{
+    color: #E74040;
+}
+
+.normal_tab{
+    color: black;
+}
+
+.back_img {
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+}

@@ -82,11 +82,14 @@ function changeSelected(new_selected) {
     card.classList.add('testimonial_selected_cards')
 
     let clone = card.cloneNode(true);
-
+    clone.innerHTML =clone.innerHTML.replace(/h5/g, "p");
+    
     // Append the newly created element on element p 
     horizontal_card_element = document.getElementById('empty_testimonial');
     horizontal_card_element.innerHTML = "";
     horizontal_card_element.appendChild( clone );
+    horizontal_card_element.innerHTML =horizontal_card_element.innerHTML.replace(/ms-5 /g, "");
+
 }
 
 // selecting a testimonial card

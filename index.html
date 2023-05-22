@@ -282,20 +282,20 @@
                             </div>
                             <div class="col-lg-7 col-12 mt-3 mt-lg-2">
                                 <div class="p-2">
-                                    <form>
+                                    <form action="php/submit_form.php" method="post">
                                         <div class="mb-3">
                                             <label for="footer_form_name" class="form-label">Name *</label>
-                                            <input type="text" class="form-control" id="footer_form_name"
+                                            <input type="text" class="form-control" id="footer_form_name" name="form_name"
                                                 placeholder="Full Name" required>
                                         </div>
                                         <div class="mb-3">
                                             <label for="footer_form_email" class="form-label">Email address *</label>
-                                            <input type="email" class="form-control" id="footer_form_email"
+                                            <input type="email" class="form-control" id="footer_form_email" name="form_email"
                                                 placeholder="example@gmail.com" required>
                                         </div>
                                         <div class="mb-3">
-                                            <label for="footer_form_message">Leave a message *</label>
-                                            <textarea type="text" class="form-control" id="footer_form_message"
+                                            <label for="footer_form_message">Leave a message*</label>
+                                            <textarea type="text" class="form-control" id="footer_form_message" name="form_message"
                                                 placeholder="Message" required style="height: 100px;"></textarea>
                                         </div>
                                         <div class="d-grid gap-2">
@@ -331,9 +331,6 @@
                 <div class="col-5 align-self-center d-none d-md-inline">
                     <img class="img-fluid" src="ref/home_illustration.png" alt="">
                 </div>
-                <!-- <div class="col-5 align-self-center d-none d-sm-inline d-md-none">
-                    <img class="img-fluid position-relative" src="ref/home_illustration.png" style="bottom: -10vh;">
-                </div> -->
             </div>
         </div>
         </div>
@@ -710,7 +707,7 @@
                 </div>
             </div>
             <div class="container mt-5">
-                <div class="card" style="height: 70vh;">
+                <div class="card">
                     <div class="row d-flex d-lg-none position-relative" style="top: 0px;">
                         <div class="col-1 pe-0">
                             <img class="pt-5" src="ref/arrow_left_back_icon.png" alt="">
@@ -722,8 +719,8 @@
                             <img class="pt-5 position-relative" src="ref/arrow_right_back_icon.png" style="left: -20px;">
                         </div>
                     </div>
-                    <div class="row text-center px-2 pt-lg-5">
-                        <div class="col-lg-6 col-12 d-none d-lg-flex">
+                    <div class="row text-center px-2 py-lg-5">
+                        <div class="col-lg-5 col-12 d-none d-lg-flex">
                             <div class="d-flex flex-column">
                                 <div class="testimonial_card card ms-5 my-3" id="testimonial_1">
                                     <div class="d-flex card-body">
@@ -763,7 +760,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-12 align-self-center">
+                        <div class="col-lg-7 col-12 align-self-center">
                             <div class="container text-start">
                                 <img src="ref/quotes_open.png" alt="">
                             </div>
@@ -791,7 +788,7 @@
             <!-- Section Heading -->
             <div class="container">
                 <img class="align-self-center" src="ref/section_heading_icon.png" alt="">
-                <span class="h3">We Sre Strong In Numbers</span>
+                <span class="h3">We Are Strong In Numbers</span>
             </div>
             <div class="container">
                 <div class="row mt-5">

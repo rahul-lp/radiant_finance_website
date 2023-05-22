@@ -152,7 +152,7 @@ function addSmoothScrolling() {
 
 function send_extra_query(){
     query = document.getElementById('faq_query_input').value;
-    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=rahulrjdpr@gmail.com&su=Query&body=" + query)
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&to=radiantfinance.insurance@gmail.com&su=Query&body=" + query)
 
     $('#faq_modal').modal('hide');
 
